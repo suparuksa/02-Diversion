@@ -3,8 +3,8 @@ namespace Kata.Diversion.Tests;
 public class Diversiontests
 {
     [Theory]
-    [InlineData("000", 0)]
-    public void SayHelloWorld_ShouldReturnHelloWorld(string input, int expect)
+    [InlineData("000", 1)]
+    public void CountNotTwoAdjacent_ShouldbeOne(string input, int expect)
     {
         // Arrange
         var sut = new Diversion();

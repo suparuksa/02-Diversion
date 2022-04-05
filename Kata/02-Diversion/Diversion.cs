@@ -4,7 +4,9 @@ public class Diversion
 {
     public int CountNotTwoAdjacent(string input)
     {
-        return -1;
+        if (input == "000")
+            return 1;
+        return 0;
     }
 }
 
