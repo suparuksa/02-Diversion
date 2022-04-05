@@ -2,9 +2,9 @@ namespace Kata.Diversion;
 
 public class Diversion
 {
-    public string SayDiversion()
+    public int CountNotTwoAdjacent(string input)
     {
-        return "Hello World!";
+        return -1;
     }
 }
 
