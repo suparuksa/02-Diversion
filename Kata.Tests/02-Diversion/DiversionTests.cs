@@ -4,12 +4,13 @@ public class Diversiontests
 {
     [Theory]
     [InlineData("000", 1)]
-    public void CountNotTwoAdjacent_ShouldbeOne(string input, int expect)
+    [InlineData("001", 1)]
+    public void CountNotTwoAdjacentOne_ShouldBeeOne(string input, int expect)
     {
         // Arrange
         var sut = new Diversion();
         // Act
-        var actual = sut.CountNotTwoAdjacent(input);
+        var actual = sut.CountNotTwoAdjacentOne(input);
         // Assert
         actual.Should().Be(expect);
     }
