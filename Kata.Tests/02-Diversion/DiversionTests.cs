@@ -5,6 +5,12 @@ public class Diversiontests
     [Theory]
     [InlineData("000", 1)]
     [InlineData("001", 1)]
+    [InlineData("010", 1)]
+    [InlineData("100", 1)]
+    [InlineData("101", 1)]
+    //
+    [InlineData("011", 0)]
+    [InlineData("110", 0)]
     public void CountNotTwoAdjacentOne_ShouldBeeOne(string input, int expect)
     {
         // Arrange
