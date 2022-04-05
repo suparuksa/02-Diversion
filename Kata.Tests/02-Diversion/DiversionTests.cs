@@ -11,6 +11,7 @@ public class Diversiontests
     //
     [InlineData("011", 0)]
     [InlineData("110", 0)]
+    [InlineData("111", 0)]
     public void CountNotTwoAdjacentOne_ShouldBeeOne(string input, int expect)
     {
         // Arrange
