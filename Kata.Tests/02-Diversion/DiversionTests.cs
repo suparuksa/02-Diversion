@@ -12,7 +12,7 @@ public class Diversiontests
     [InlineData("011", 0)]
     [InlineData("110", 0)]
     [InlineData("111", 0)]
-    public void CountNotTwoAdjacentOne_ShouldBeeOne(string input, int expect)
+    public void TestCountNotTwoAdjacentOne(string input, int expect)
     {
         // Arrange
         var sut = new Diversion();
@@ -21,5 +21,18 @@ public class Diversiontests
         // Assert
         actual.Should().Be(expect);
     }
+
+    [Theory]
+    [InlineData("000, 001, 010, 011, 100, 101, 110, 111", 5)]
+    public void TestCountAllPossibleThreeDigitCombinations(string input, int expect)
+    {
+        // Arrange
+        var sut = new Diversion();
+        // Act
+        var actual = sut.CountAllNotTwoAdjacentOne(input);
+        // Assert
+        actual.Should().Be(expect);
+    }
+
 }
 

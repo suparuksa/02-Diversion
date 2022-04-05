@@ -10,6 +10,11 @@ public class Diversion
             return 1;
     }
 
+    public int CountAllNotTwoAdjacentOne(string input)
+    {
+        return 0;
+    }
+
     private bool IsAdjacentOne(string input)
     {
         char[] chars = input.ToCharArray();
